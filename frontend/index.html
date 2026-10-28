@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f4ed">
+  <title>Campus Clubs | Student Club Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+  <header class="home-nav">
+    <a class="home-brand" href="/" aria-label="Campus Clubs home">
+      <span class="brand-mark home-mark" aria-hidden="true">CC</span>
+      <span><strong>Campus Clubs</strong><small>Student Club Management System</small></span>
+    </a>
+    <a class="nav-login" href="pages/login.html?portal=student">Sign in <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="home-main">
+    <section class="home-intro">
+      <h1>Student Club Management</h1>
+      <p class="intro-copy">Sign in to continue.</p>
+    </section>
+
+    <section class="portal-section" aria-labelledby="portal-heading">
+      <div class="section-heading">
+        <div><h2 id="portal-heading">Choose your portal</h2></div>
+      </div>
+
+      <div class="portal-group">
+        <div class="portal-group-heading"><h3>Students</h3></div>
+        <div class="portal-grid portal-grid-one">
+          <a class="portal-card student-portal" href="pages/login.html?portal=student">
+            <span class="portal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20v-1.5a6.5 6.5 0 0 1 13 0V20z"/></svg></span>
+            <span class="portal-copy"><strong>Student</strong><small>Browse clubs, submit joining requests, view events and check notifications.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="portal-group">
+        <div class="portal-group-heading"><h3>Club leadership</h3></div>
+        <div class="portal-grid">
+          <a class="portal-card president-portal" href="pages/login.html?portal=president">
+            <span class="portal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 14.4 8l5.5.8-4 3.9.9 5.5-4.8-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></span>
+            <span class="portal-copy"><strong>Club President</strong><small>Lead club operations, membership decisions and events.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="portal-group">
+        <div class="portal-group-heading"><h3>Faculty and administration</h3></div>
+        <div class="portal-grid portal-grid-three">
+          <a class="portal-card coordinator-portal" href="pages/login.html?portal=faculty_coordinator">
+            <span class="portal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V9l6-5 6 5v11M9 12h6M9 16h6"/></svg></span>
+            <span class="portal-copy"><strong>Faculty Coordinator</strong><small>Oversee assigned clubs and review club decisions.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="portal-card coordinator-portal" href="pages/login.html?portal=club_coordinator">
+            <span class="portal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V8l7-4 7 4v12M9 12h6M9 16h6"/></svg></span>
+            <span class="portal-copy"><strong>Club Coordinator</strong><small>Head of all clubs and chapters; reviews events, joining requests and budgets.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="portal-card venue-portal" href="pages/login.html?portal=venue_admin">
+            <span class="portal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V8l7-4 7 4v12M9 11h2m2 0h2m-6 4h2m2 0h2"/></svg></span>
+            <span class="portal-copy"><strong>Venue Administrator</strong><small>Manage venue requests, availability and approvals.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="portal-card director-portal" href="pages/login.html?portal=director">
+            <span class="portal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10h12v10M4 10l8-6 8 6M9 13h6m-6 3h6"/></svg></span>
+            <span class="portal-copy"><strong>Director</strong><small>Review budgets, bills and administrative approvals.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="portal-card director-portal" href="pages/login.html?portal=system_admin">
+            <span class="portal-icon" aria-hidden="true">A</span>
+            <span class="portal-copy"><strong>Account Administrator</strong><small>Create and manage student and staff accounts.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="portal-card mentor-portal" href="pages/login.html?portal=faculty_mentor">
+            <span class="portal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1M16 5.5a3 3 0 0 1 0 5.8M18 14a5 5 0 0 1 3 4.5V20"/></svg></span>
+            <span class="portal-copy"><strong>Faculty Mentor</strong><small>View assigned students and their club participation.</small></span><span class="portal-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  <footer class="home-footer"><span>Campus Clubs</span><span>Student Club Management System</span></footer>
+</body>
+</html>

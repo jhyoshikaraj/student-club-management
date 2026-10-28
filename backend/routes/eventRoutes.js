@@ -1,0 +1,18 @@
+const express = require('express');
+const router = express.Router();
+const { createEvent, listEvents, getEvent, updateEventStatus, decideEvent, deletePastEvent, decideCollaboration, registerForEvent, listRegistrations, updatePublication, decideFacultyApproval, updateRoleAssignments } = require('../controllers/eventController');
+const { protect } = require('../middleware/auth');
+const { allowRoles } = require('../middleware/roles');
+router.get('/', protect, listEvents);
+router.get('/:id', protect, getEvent);
+router.post('/:id/register', protect, registerForEvent);
+router.get('/:id/registrations', protect, listRegistrations);
+router.patch('/:id/publication', protect, updatePublication);
+router.post('/', protect, allowRoles('president','vice_president'), createEvent);
+router.patch('/:id/faculty-decision', protect, allowRoles('faculty_coordinator'), decideFacultyApproval);
+router.patch('/:id/role-assignments', protect, allowRoles('president'), updateRoleAssignments);
+router.patch('/:id/collaboration-decision', protect, allowRoles('president'), decideCollaboration);
+router.patch('/:id/decision', protect, allowRoles('club_coordinator'), decideEvent);
+router.delete('/:id/past', protect, allowRoles('club_coordinator'), deletePastEvent);
+router.patch('/:id/status', protect, allowRoles('president','vice_president'), updateEventStatus);
+module.exports = router;

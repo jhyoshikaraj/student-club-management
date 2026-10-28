@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClubSphere | Login</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="login-page">
+  <a class="back-home" href="/">← All portals</a>
+  <div class="login-shell">
+    <section class="auth-card">
+      <div class="brand-mobile">CS</div>
+      <h2>Welcome back</h2>
+      <p class="muted" id="portalIntro">Sign in to your club portal.</p>
+      <form id="loginForm">
+        <label>Email<input type="email" id="email" placeholder="you@college.edu" required autocomplete="email" /></label>
+        <label>Password<input type="password" id="password" placeholder="Enter your password" required autocomplete="current-password" /></label>
+        <button class="primary full" type="submit">Sign in</button>
+        <div id="error" class="error" role="alert" aria-live="polite"></div>
+        
+      </form>
+    </section>
+  </div>
+  <script src="../js/api.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

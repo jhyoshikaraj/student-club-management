@@ -1,0 +1,22 @@
+{
+  "name": "clubsphere",
+  "version": "1.0.0",
+  "description": "ClubSphere - Student Club Management System",
+  "main": "backend/server.js",
+  "scripts": {
+    "build": "npm install --prefix backend",
+    "start": "node backend/server.js",
+    "dev": "npm run dev --prefix backend",
+    "seed": "npm run seed --prefix backend",
+    "setup:admin": "npm run setup:admin --prefix backend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "clubsphere",
+    "club-management"
+  ],
+  "author": "",
+  "license": "ISC"
+}
